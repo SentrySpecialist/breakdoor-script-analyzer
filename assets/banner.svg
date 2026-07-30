@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#131a24"/>
+      <stop offset="100%" stop-color="#1c2733"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#3fb1ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3fb1ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="doorGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- decorative circuit-like lines -->
+  <g stroke="#3fb1ff" stroke-width="1" opacity="0.12" fill="none">
+    <line x1="0" y1="60" x2="300" y2="60"/>
+    <line x1="300" y1="60" x2="300" y2="20"/>
+    <line x1="900" y1="40" x2="1200" y2="40"/>
+    <line x1="900" y1="40" x2="900" y2="90"/>
+    <line x1="0" y1="320" x2="220" y2="320"/>
+    <line x1="220" y1="320" x2="220" y2="360"/>
+    <line x1="980" y1="330" x2="1200" y2="330"/>
+    <line x1="980" y1="330" x2="980" y2="300"/>
+  </g>
+
+  <!-- faint locked door motif, kept clear of text zone -->
+  <g opacity="0.14">
+    <rect x="70" y="200" width="70" height="120" rx="4" fill="none" stroke="#8ecbff" stroke-width="2"/>
+    <circle cx="122" cy="262" r="4" fill="#8ecbff"/>
+    <rect x="1060" y="200" width="70" height="120" rx="4" fill="url(#doorGrad)" stroke="#8ecbff" stroke-width="2"/>
+    <circle cx="1078" cy="262" r="4" fill="#8ecbff"/>
+  </g>
+
+  <!-- scattered soft dots -->
+  <g fill="#ffffff" opacity="0.08">
+    <circle cx="150" cy="90" r="3"/>
+    <circle cx="1050" cy="110" r="2.5"/>
+    <circle cx="200" cy="300" r="2"/>
+    <circle cx="1000" cy="300" r="3"/>
+    <circle cx="600" cy="60" r="2"/>
+  </g>
+
+  <!-- subtle binary path suggesting code scanning -->
+  <path d="M100 130 Q 300 100 600 130 T 1100 130" stroke="#58a6ff" stroke-width="1" fill="none" opacity="0.10"/>
+
+  <text x="600" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58.0" fill="#ffffff" font-weight="600">
+    <tspan x="600" dy="0">BreakDoor Script</tspan>
+  </text>
+
+  <text x="600" y="230" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21.0" fill="#c9d1d9">
+    <tspan x="600" dy="0">Small Windows tool for analysts checking BreakDoor Script files —</tspan>
+    <tspan x="600" dy="30">reads structure and flags suspicious calls…</tspan>
+  </text>
+</svg>
